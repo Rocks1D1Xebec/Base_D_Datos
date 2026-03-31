@@ -14,4 +14,7 @@ while intentos < 3:
     else:
         intentos += 1
         print("Error en contraseña. Le quedan", error, "intentos.")
-        error -= 1
+        error -= 1 
+# --- Aporte de Cruz: Sistema de bloqueo de seguridad ---
+if intentos == 3:
+    print("Acceso bloqueado. Demasiados intentos fallidos.")
